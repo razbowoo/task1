@@ -1,19 +1,20 @@
 package com.ecreatic.test.services;
 
-import com.ecreatic.test.DAO.UserDAO;
 import com.ecreatic.test.model.User;
 
+import java.util.List;
+import java.util.Optional;
 
-public class UserService {
-    private final UserDAO userDAO;
 
-    public UserService(UserDAO userDAO) {
-        this.userDAO = userDAO;
+    public interface UserService {
+        List<User> findAll();
+
+        Optional<org.h2.engine.User> findBy(String email);
+
+        org.h2.engine.User save(org.h2.engine.User user);
+
+        org.h2.engine.User update(org.h2.engine.User user);
+
+        void delete(org.h2.engine.User user);
     }
-
-    public void addUser(User user){
-        userDAO.insert(user);
-    }
-
-    public  void
 
