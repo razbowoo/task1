@@ -1,0 +1,3 @@
+rootProject.name = 'newtask1'
+include ("newtask")
+
