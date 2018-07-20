@@ -66,4 +66,8 @@ public class User {
                 ", Password=" + Password +
                 '}';
     }
+
+    public void setActive(int i) {
+        return ;
+    }
 }

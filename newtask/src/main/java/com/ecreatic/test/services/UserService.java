@@ -9,12 +9,12 @@ import java.util.Optional;
     public interface UserService {
         List<User> findAll();
 
-        Optional<org.h2.engine.User> findBy(String email);
+        Optional<User> findBy(String email);
 
-        org.h2.engine.User save(org.h2.engine.User user);
+        User save(User user);
 
-        org.h2.engine.User update(org.h2.engine.User user);
+        User update(User user);
 
-        void delete(org.h2.engine.User user);
+        void delete(User user);
     }
 
