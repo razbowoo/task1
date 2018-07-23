@@ -31,8 +31,8 @@ public class RegistrationController {
     @PostMapping
     public String createNewStudent(@Valid User user, BindingResult bindingResult, Model model) {
         String email = user.getEmail();
-        Optional<User> existStudent = userService.findBy(email);
-        if (existStudent.isPresent()) {
+        Optional<User> existUser = userService.findBy(email);
+        if (existUser.isPresent()) {
             bindingResult.rejectValue("email", "error.student",
                     "There is already a user registered with the email provided");
         }
@@ -41,7 +41,7 @@ public class RegistrationController {
         } else {
             userService.save(user);
             model.addAttribute("successMessage", "User has been registered successfully");
-            model.addAttribute("student", new User());
+            model.addAttribute("user", new User());
         }
         return "registration";
     }

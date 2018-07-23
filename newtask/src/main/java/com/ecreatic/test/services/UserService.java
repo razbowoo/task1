@@ -6,10 +6,11 @@ import java.util.List;
 import java.util.Optional;
 
 
-    public interface UserService {
+public interface UserService {
         List<User> findAll();
 
         Optional<User> findBy(String email);
+
 
         User save(User user);
 

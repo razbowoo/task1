@@ -1,6 +1,8 @@
 package com.ecreatic.test.controllers;
 
 import com.ecreatic.test.services.UserService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

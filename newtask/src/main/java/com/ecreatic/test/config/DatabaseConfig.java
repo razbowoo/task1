@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
+
 import javax.sql.DataSource;
 
 
@@ -22,6 +24,10 @@ public class DatabaseConfig {
         return dataSource;
     }
 
+    @Bean
+    public ShaPasswordEncoder passwordEncoder() {
+        return new ShaPasswordEncoder();
+    }
    }
 
 

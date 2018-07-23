@@ -2,11 +2,13 @@ package com.ecreatic.test.DAO;
 
 import com.ecreatic.test.model.User;
 
+import java.util.Optional;
+
 public interface UserDAO {
 
-    void insert(User user);
+    User insert(User user);
 
-    User findByName(String FirstName);
+    Optional<User> findByEmail(String Eamil);
 
     User findById(int id);
 

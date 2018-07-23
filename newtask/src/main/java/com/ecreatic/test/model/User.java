@@ -2,17 +2,20 @@ package com.ecreatic.test.model;
 
 public class User {
     private int id;
-    private String FirstName;
-    private String LastName;
-    private String Email;
-    private int Password;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private int active = 0;
+    private String role;
 
-    public User(int id, String FirstName, String LastName, String Email, int Password) {
+
+    public User(int id, String FirstName, String LastName, String Email, String Password) {
         this.id = id;
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-        this.Email = Email;
-        this.Password = Password;
+        this.firstName = FirstName;
+        this.lastName = LastName;
+        this.email = Email;
+        this.password = Password;
 
     }
 
@@ -29,49 +32,63 @@ public class User {
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
-    public int getPassword() {
-        return Password;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassword(int password) {
-        Password = password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", FirstName='" + FirstName + '\'' +
-                ", LastName='" + LastName + '\'' +
-                ", Email='" + Email + '\'' +
-                ", Password=" + Password +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password=" + password +
                 '}';
     }
 
-    public void setActive(int i) {
-        return ;
+    public int getActive() {
+        int active = 1;
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active = active;
+    }
+
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
