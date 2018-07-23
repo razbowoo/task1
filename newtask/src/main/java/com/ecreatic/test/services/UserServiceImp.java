@@ -1,10 +1,12 @@
 package com.ecreatic.test.services;
 
 import com.ecreatic.test.model.User;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class UserServiceImp implements UserService {
 
     @Override
