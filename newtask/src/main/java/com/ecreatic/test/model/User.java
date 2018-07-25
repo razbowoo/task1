@@ -1,5 +1,7 @@
 package com.ecreatic.test.model;
 
+import java.util.Optional;
+
 public class User {
     private int id;
     private String firstName;
@@ -8,6 +10,7 @@ public class User {
     private String password;
     private int active = 0;
     private String role;
+    private String resetToken;
 
 
     public User(int id, String FirstName, String LastName, String Email, String Password) {
@@ -90,5 +93,11 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+
+
+    public void setResetToken(String resetToken) {
+        this.resetToken = resetToken;
     }
 }

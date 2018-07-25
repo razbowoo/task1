@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Login</title>
@@ -47,6 +47,11 @@
             </form>
             <form th:action="@{/registration}" method="get">
                 <span>Still have no account?</span><input id="register" class="btn btn-link" type="submit" value="Register!"/>
+            </form>
+
+            </form>
+            <form th:action="@{/forgot-password}" method="get">
+                <span>Forgot your password?</span><input id="forgot-password" class="btn btn-link" type="submit" value="Forgot password!"/>
             </form>
         </div>
     </div>

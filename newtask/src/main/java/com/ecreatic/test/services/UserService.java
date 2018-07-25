@@ -12,10 +12,12 @@ public interface UserService {
         Optional<User> findBy(String email);
 
 
-        User save(User user);
+        abstract User save(User user);
 
         User update(User user);
 
         void delete(User user);
-    }
+
+
+}
 

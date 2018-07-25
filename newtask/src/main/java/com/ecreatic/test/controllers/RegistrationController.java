@@ -33,7 +33,7 @@ public class RegistrationController {
         String email = user.getEmail();
         Optional<User> existUser = userService.findBy(email);
         if (existUser.isPresent()) {
-            bindingResult.rejectValue("email", "error.student",
+            bindingResult.rejectValue("email", "error.user",
                     "There is already a user registered with the email provided");
         }
         if (bindingResult.hasErrors()) {
@@ -44,5 +44,12 @@ public class RegistrationController {
             model.addAttribute("user", new User());
         }
         return "registration";
+    }
+    public static class passwordvalidation {
+        public static void main(String[] args) {
+            String passwd = "aaZZa44@";
+            String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
+            System.out.println(passwd.matches(pattern));
+        }
     }
 }
