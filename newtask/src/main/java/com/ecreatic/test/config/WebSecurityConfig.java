@@ -1,6 +1,8 @@
 package com.ecreatic.test.config;
 
+import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -49,6 +51,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(shaPasswordEncoder);
     }
-
+    @Bean
+    Server h2Server() {
+        Server server = new Server();
+        try {
+            server.runTool("-tcp");
+            server.runTool("-tcpAllowOthers");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return server;
+    }
 
 }

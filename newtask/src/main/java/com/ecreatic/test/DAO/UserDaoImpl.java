@@ -3,13 +3,12 @@ package com.ecreatic.test.DAO;
 import com.ecreatic.test.model.User;
 import org.springframework.stereotype.Component;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
-
-import javax.sql.DataSource;
 
 @Component
 public class UserDaoImpl implements UserDAO{
@@ -23,7 +22,7 @@ public class UserDaoImpl implements UserDAO{
     @Override
     public User insert(User user) {
 
-        String sql = "INSERT INTO USER " +
+        String sql = "INSERT INTO USERS " +
                 "(ID, FIRSTNAME, LASTNAME , EMAIL ,PASSWORD,ACTIVE,ROLE) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = dataSource.getConnection()) {
@@ -48,7 +47,7 @@ public class UserDaoImpl implements UserDAO{
 
     @Override
     public Optional<User> findByEmail(String Email) {
-        String sql = "SELECT * FROM USER WHERE EMAIL = ?";
+        String sql = "SELECT * FROM USERS WHERE EMAIL = ?";
 
         try (Connection conn = dataSource.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -76,7 +75,7 @@ public class UserDaoImpl implements UserDAO{
     @Override
     public User findById(int id){
 
-        String sql = "SELECT * FROM USER WHERE identity = ?";
+        String sql = "SELECT * FROM USERS WHERE identity = ?";
 
         try (Connection conn = dataSource.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(sql);

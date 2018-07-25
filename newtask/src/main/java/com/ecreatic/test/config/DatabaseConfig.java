@@ -17,9 +17,9 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         final SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(org.h2.Driver.class);
-        dataSource.setUrl("jdbc:h2:~/users2;DB_CLOSE_ON_EXIT=TRUE");
+        dataSource.setUrl("jdbc:h2:~/users;DB_CLOSE_ON_EXIT=TRUE");
         dataSource.setUsername("sa");
-        dataSource.setPassword("");
+        dataSource.setPassword(" ");
         return dataSource;
     }
 

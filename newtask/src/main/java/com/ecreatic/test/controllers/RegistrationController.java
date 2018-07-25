@@ -29,7 +29,7 @@ public class RegistrationController {
     }
 
     @PostMapping
-    public String createNewStudent(@Valid User user, BindingResult bindingResult, Model model) {
+    public String createNewUser(@Valid User user, BindingResult bindingResult, Model model) {
         String email = user.getEmail();
         Optional<User> existUser = userService.findBy(email);
         if (existUser.isPresent()) {
@@ -45,11 +45,5 @@ public class RegistrationController {
         }
         return "registration";
     }
-    public static class passwordvalidation {
-        public static void main(String[] args) {
-            String passwd = "aaZZa44@";
-            String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
-            System.out.println(passwd.matches(pattern));
-        }
-    }
+
 }
