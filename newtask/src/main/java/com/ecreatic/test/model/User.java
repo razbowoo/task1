@@ -1,7 +1,5 @@
 package com.ecreatic.test.model;
 
-import java.util.Optional;
-
 public class User {
     private int id;
     private String firstName;
