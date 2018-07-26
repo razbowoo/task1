@@ -14,8 +14,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/add_user">
+<form action="/home">
 
+    <button id="btn_click">User Profile</button>
+    <script>
+        $('#btn_click').on('click', function() { window.location = '/home'; });
+    </script>
 
 </form>
 </body>
