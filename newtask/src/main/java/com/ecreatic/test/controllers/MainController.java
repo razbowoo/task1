@@ -19,7 +19,6 @@ public class MainController {
 
     @RequestMapping(value = "/index")
     public String index(Model model) {
-        Object user;
         model.addAttribute("users", userService.findAll());
         return "index";
     }

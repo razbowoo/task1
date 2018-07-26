@@ -22,7 +22,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<User> findAll() {
-        return null;
+        return userDAO.findAll();
     }
 
     @Override

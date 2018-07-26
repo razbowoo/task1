@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Component
@@ -23,17 +25,17 @@ public class UserDaoImpl implements UserDAO {
     public User insert(User user) {
 
         String sql = "INSERT INTO USERS " +
-                "(ID, FIRSTNAME, LASTNAME , EMAIL ,PASSWORD,ACTIVE,ROLE) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                "(FIRSTNAME, LASTNAME , EMAIL ,PASSWORD,ACTIVE,ROLE) VALUES ( ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = dataSource.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, user.getId());
-            ps.setString(2, user.getFirstName());
-            ps.setString(3, user.getLastName());
-            ps.setString(4, user.getEmail());
-            ps.setString(5, user.getPassword());
-            ps.setInt(6, user.getActive());
-            ps.setString(7, user.getRole());
+//            ps.setInt(1, user.getId());
+            ps.setString(1, user.getFirstName());
+            ps.setString(2, user.getLastName());
+            ps.setString(3, user.getEmail());
+            ps.setString(4, user.getPassword());
+            ps.setInt(5, user.getActive());
+            ps.setString(6, user.getRole());
 
             ps.executeUpdate();
             ps.close();
@@ -106,6 +108,33 @@ public class UserDaoImpl implements UserDAO {
             rs.close();
             ps.close();
             return user;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public List<User> findAll() {
+        String sql = "SELECT * FROM USERS";
+        List<User> users = new ArrayList<>();
+        try (Connection conn = dataSource.getConnection()) {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()) {
+                User user = new User(
+                        rs.getInt("ID"),
+                        rs.getString("FIRSTNAME"),
+                        rs.getString("LASTNAME"),
+                        rs.getString("EMAIL"),
+                        rs.getString("PASSWORD"),
+                        rs.getInt("ACTIVE"),
+                        rs.getString("ROLE")
+                );
+                users.add(user);
+            }
+            rs.close();
+            ps.close();
+            return users;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
