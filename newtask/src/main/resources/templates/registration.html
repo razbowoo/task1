@@ -36,7 +36,7 @@
             <h2>Registration Form</h2>
             <form autocomplete="off" th:action="@{/registration}"
                   th:object="${user}" method="post" class="form-horizontal"
-                  role="form">
+                  role="form" id="registration">
 
                 <div class="form-group">
                     <div class="col-sm-9">
@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{password}"
-                               placeholder="Password" class="form-control"/>
+                               placeholder="Password" class="form-control" minlength="8"/>
                         <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
                                class="validation-message"></label>
                     </div>
