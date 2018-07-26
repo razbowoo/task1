@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 @Component
-public class UserDaoImpl implements UserDAO{
+public class UserDaoImpl implements UserDAO {
     private final DataSource dataSource;
 
     public UserDaoImpl(DataSource dataSource) {
@@ -32,8 +32,8 @@ public class UserDaoImpl implements UserDAO{
             ps.setString(3, user.getLastName());
             ps.setString(4, user.getEmail());
             ps.setString(5, user.getPassword());
-            ps.setInt(6,user.getActive());
-            ps.setString(7,user.getRole());
+            ps.setInt(6, user.getActive());
+            ps.setString(7, user.getRole());
 
             ps.executeUpdate();
             ps.close();
@@ -57,15 +57,25 @@ public class UserDaoImpl implements UserDAO{
             if (rs.next()) {
                 user = new User(
                         rs.getInt("ID"),
-                        rs.getString("FIRSTNANME"),
-                        rs.getString("LASTNANME"),
+                        rs.getString("FIRSTNAME"),
+                        rs.getString("LASTNAME"),
                         rs.getString("EMAIL"),
-                        rs.getString("PASSWORD")
+                        rs.getString("PASSWORD"),
+                        rs.getInt("ACTIVE"),
+                        rs.getString("ROLE")
+
                 );
+                rs.close();
+                ps.close();
+
+                return Optional.of(user);
+
+            } else {
+                rs.close();
+                ps.close();
+                return Optional.empty();
             }
-            rs.close();
-            ps.close();
-            return Optional.of(user);
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -73,7 +83,7 @@ public class UserDaoImpl implements UserDAO{
 
 
     @Override
-    public User findById(int id){
+    public User findById(int id) {
 
         String sql = "SELECT * FROM USERS WHERE identity = ?";
 
@@ -85,10 +95,12 @@ public class UserDaoImpl implements UserDAO{
             if (rs.next()) {
                 user = new User(
                         rs.getInt("ID"),
-                        rs.getString("FIRSTNANME"),
-                        rs.getString("LASTNANME"),
+                        rs.getString("FIRSTNAME"),
+                        rs.getString("LASTNAME"),
                         rs.getString("EMAIL"),
-                        rs.getString("PASSWORD")
+                        rs.getString("PASSWORD"),
+                        rs.getInt("ACTIVE"),
+                        rs.getString("ROLE")
                 );
             }
             rs.close();

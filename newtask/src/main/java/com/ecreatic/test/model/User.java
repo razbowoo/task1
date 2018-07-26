@@ -8,16 +8,16 @@ public class User {
     private String password;
     private int active = 0;
     private String role;
-    private String resetToken;
 
 
-    public User(int id, String FirstName, String LastName, String Email, String Password) {
+    public User(int id, String firstName, String lastName, String email, String password, int active, String role) {
         this.id = id;
-        this.firstName = FirstName;
-        this.lastName = LastName;
-        this.email = Email;
-        this.password = Password;
-
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.active = active;
+        this.role = role;
     }
 
     public User() {
@@ -93,9 +93,4 @@ public class User {
         this.role = role;
     }
 
-
-
-    public void setResetToken(String resetToken) {
-        this.resetToken = resetToken;
-    }
 }

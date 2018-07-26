@@ -1,58 +1,61 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" xmlns:form="http://www.w3.org/1999/xhtml"
-     >
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html"
+>
 <head>
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
 </head>
 <body>
-<form th:action="@{/home}" method="get">
+
     <div align="center">
-    <p><b> User Profile </b></p>
-<div class="form-group">
-    <div align="center">
-        </head>
-        <body>
+        <p><b> User Profile </b></p>
+        <div class="form-group">
+            <div align="center">
+                <div>
 
-            <h1>List</h1>
+                <h1>List</h1>
 
-            <table border="1">
+                <table border="1">
 
-                <th>id</th>
-                <th>Name</th>
-                <th>LastName</th>
-                <th>Email</th>
-                <th>Password</th>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>LastName</th>
+                    <th>Email</th>
 
 
-                <div ${users}   var="" items="${litsUser}">
-                    <tr>
 
-                        <td></td>
-                        <td th:text="${user.id}"></td>
-                        <td th:text="${user.firstName}"> </td>
-                        <td th:text="${user.lastName}"> </td>
-                        <td th:text="${user.email}"> </td>
-                        <td th:text="${user.password}"> </td>
-                        <td><a href="edituser?id=${user.id}">Edit</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp; <a
-                                    href="deleteuserid=${user.id}">Delete</a></td>
+                        <tr>
 
-                    </tr>
+                            
+                            <td th:text="${user.id}"></td>
+                            <td th:text="${user.firstName}"></td>
+                            <td th:text="${user.lastName}"></td>
+                            <td th:text="${user.email}"></td>
+                            <td><a href="edituser?id=${user.id}">Edit</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp; <a
+                                        href="deleteuserid=${user.id}">Delete</a></td>
+
+                        </tr>
+
+
+                </table>
                 </div>
-            </table>
+            </div>
+        </div>
 
- </div>
-</div>
- </form>
-</body>
+    </div>
+</body>>
 </html>
