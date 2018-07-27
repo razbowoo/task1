@@ -19,43 +19,33 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div align="center">
-        <p><b> User Profile </b></p>
-        <div class="form-group">
-            <div align="center">
-                <div>
-
+<div align="center">
+    <p><b> User Profile </b></p>
+    <div class="form-group">
+        <div align="center">
+            <div>
                 <h1>List</h1>
-
                 <table border="1">
-
                     <th>id</th>
                     <th>Name</th>
                     <th>LastName</th>
                     <th>Email</th>
+                    <th>Password</th>
 
-
-
-                        <tr>
-
-
-                            <td th:text="${user.id}"></td>
-                            <td th:text="${user.firstName}"></td>
-                            <td th:text="${user.lastName}"></td>
-                            <td th:text="${user.email}"></td>
-                            <td><a href="edituser?id=${user.id}">Edit</a>
-                                &nbsp;&nbsp;&nbsp;&nbsp; <a
-                                        href="deleteuserid=${user.id}">Delete</a></td>
-
-                        </tr>
-
-
+                    <tr>
+                        <td th:text="${user.id}"></td>
+                        <td th:text="${user.firstName}"></td>
+                        <td th:text="${user.lastName}"></td>
+                        <td th:text="${user.email}"></td>
+                        <td th:text="${user.password}"></td>
+                        <td><a href="edituser?id=${user.id}">Edit</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="deleteuserid=${user.id}">Delete</a></td>
+                    </tr>
                 </table>
-                </div>
             </div>
         </div>
-
     </div>
-</body>>
+</div>
+</body>
 </html>
