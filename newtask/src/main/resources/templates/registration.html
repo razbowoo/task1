@@ -45,7 +45,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="text" th:field="*{firstName}"
-                               placeholder="Name" class="form-control"/>
+                               placeholder="Name" class="form-control" required="required"/>
                         <label th:if="${#fields.hasErrors('FirstName')}" th:errors="*{firstName}"
                                class="validation-message"></label>
                     </div>
@@ -54,7 +54,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="text" th:field="*{lastName}"
-                               placeholder="Last Name" class="form-control" />
+                               placeholder="Last Name" class="form-control" required="required"/>
                         <label th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
                                class="validation-message"></label>
                     </div>
@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="text" th:field="*{email}" placeholder="Email"
-                               class="form-control"/>
+                               class="form-control" required="required"/>
                         <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
                                class="validation-message"></label>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{password}"
-                               placeholder="Password" class="form-control" minlength="8" />
+                               placeholder="Password" class="form-control" minlength="8"  />
                         <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
                                class="validation-message"></label>
                     </div>
