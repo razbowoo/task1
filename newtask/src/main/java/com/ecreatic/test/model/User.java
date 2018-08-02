@@ -6,10 +6,11 @@ public class User {
     private String lastName;
     private String email;
     private String password;
-    private String password2;
+    private String confirmPassword;
     private int active = 0;
     private String role;
 
+    public User (){}
 
     public User(int id, String firstName, String lastName, String email, String password, int active, String role) {
         this.id = id;
@@ -17,13 +18,8 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.password2 = password;
         this.active = active;
         this.role = role;
-    }
-
-    public User() {
-
     }
 
     public int getId() {
@@ -66,24 +62,8 @@ public class User {
         this.password = password;
     }
 
-    public String getPassword2() {
-        return password;
-    }
 
-    public void setPassword2(String password) {
-        this.password = password;
-    }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", password=" + password +
-                '}';
-    }
 
     public int getActive() {
         int active = 1;
@@ -103,4 +83,11 @@ public class User {
         this.role = role;
     }
 
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }
 }

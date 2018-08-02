@@ -36,6 +36,9 @@ public class RegistrationController {
             bindingResult.rejectValue("email", "error.user",
                     "There is already a user registered with the email provided");
         }
+        if (!user.getPassword().equals(user.getConfirmPassword())) {
+            bindingResult.rejectValue("password", "error.user", "Passwords should be equal");
+        }
         if (bindingResult.hasErrors()) {
             return "registration";
         } else {

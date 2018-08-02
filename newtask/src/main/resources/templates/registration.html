@@ -80,9 +80,9 @@
 
                 <div class="form-group">
                     <div class="col-sm-9">
-                        <input type="password" th:field="*{password2}"
+                        <input type="password" th:field="*{confirmPassword}"
                                placeholder="Сonfirm Password" class="form-control" minlength="6" required="required"/>
-                        <label th:if="${#fields.hasErrors('password2')}" th:errors="*{password2}"
+                        <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"
                                class="validation-message"></label>
                     </div>
                 </div>
