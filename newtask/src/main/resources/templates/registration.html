@@ -72,7 +72,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{password}"
-                               placeholder="Password" class="form-control" minlength="6" required="required"/>
+                               placeholder="Password" class="form-control" minlength="8" required="required"/>
                         <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
                                class="validation-message"></label>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{confirmPassword}"
-                               placeholder="Сonfirm Password" class="form-control" minlength="6" required="required"/>
+                               placeholder="Сonfirm Password" class="form-control" minlength="8" required="required"/>
                         <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"
                                class="validation-message"></label>
                     </div>
