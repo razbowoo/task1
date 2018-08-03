@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,7 +22,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private final ShaPasswordEncoder shaPasswordEncoder;
 
     public WebSecurityConfig(UserDetailsService userDetailsService, ShaPasswordEncoder shaPasswordEncoder, DataSource dataSource) {
-        this.userDetailsService= userDetailsService;
+        this.userDetailsService = userDetailsService;
         this.shaPasswordEncoder = shaPasswordEncoder;
     }
 
@@ -52,6 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(shaPasswordEncoder);
     }
+
     @Bean
     Server h2Server() {
         Server server = new Server();
@@ -64,4 +66,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return server;
     }
 
+    @Override
+    public void configure(WebSecurity web) {
+        web
+                .ignoring()
+                .antMatchers("/resources/", "/static/", "/css/", "/js/", "/images/**");
+    }
 }
+
+

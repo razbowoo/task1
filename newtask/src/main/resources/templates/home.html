@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html"
 >
 <head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -25,20 +26,19 @@
         <div align="center">
             <div>
                 <h1>List</h1>
-                <table border="1">
+                <table>
                     <th>id</th>
                     <th>Name</th>
                     <th>LastName</th>
                     <th>Email</th>
-                    <th>Password</th>
+                    <!--<th>Password</th>-->
 
                     <tr>
                         <td th:text="${user.id}"></td>
                         <td th:text="${user.firstName}"></td>
                         <td th:text="${user.lastName}"></td>
                         <td th:text="${user.email}"></td>
-                        <td th:text="${user.password}"></td>
-
+                        <!--<td th:text="${user.password}"></td>-->
                     </tr>
                 </table>
             </div>
