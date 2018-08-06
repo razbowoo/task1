@@ -47,33 +47,33 @@ public class MainController {
         return "home";
     }
 
-
-    public static class passwordvalidation {
-        public static void main(String[] args) {
-            String password = "aaZZa44@";
-            String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
-            System.out.println(password.matches(pattern));
-        }
-    }
-
-
-    public static class emailvalidation {
-        public static void main(String[] args) {
-            int counter = 0;
-            String email = "example@gmail.com";
-            Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$");
-            Matcher matcher = pattern.matcher(email);
-
-            while (matcher.find()) {
-                counter++;
-                System.out.println("Matches found: " +
-                        email.substring(matcher.start(), matcher.end()) +
-                        "'. Starting at index" + matcher.start() +
-                        "'. and ending at index" + matcher.end());
-            }
-            System.out.println("Matches found: " + counter);
-        }
-    }
+//    @RequestMapping(value = "/registration")
+//    public static class passwordvalidation {
+//        public static void main(String[] args) {
+//            String password = "aaZZa44@";
+//            String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
+//            System.out.println(password.matches(pattern));
+//        }
+//    }
+//
+//    @RequestMapping(value = "/registration")
+//    public static class emailvalidation {
+//        public static void main(String[] args) {
+//            int counter = 0;
+//            String email = "example@gmail.com";
+//            Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$");
+//            Matcher matcher = pattern.matcher(email);
+//
+//            while (matcher.find()) {
+//                counter++;
+//                System.out.println("Matches found: " +
+//                        email.substring(matcher.start(), matcher.end()) +
+//                        "'. Starting at index" + matcher.start() +
+//                        "'. and ending at index" + matcher.end());
+//            }
+//            System.out.println("Matches found: " + counter);
+//        }
+//    }
 }
 
 

@@ -27,12 +27,19 @@
     });
     /*]]>*/
 </script>
+
 <div class="alert alert-success alert-dismissible fade show successRegister">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
     </button>
     <strong>Success!</strong> <span th:utext="${successMessage}"></span>
 </div>
+
+<script>
+    function myTrim(input) {
+        input.value = input.value.trim();
+    }
+</script>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -45,7 +52,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="text" th:field="*{firstName}"
-                               placeholder="Name" class="form-control" required="required"/>
+                               placeholder="Name" class="form-control"
+                               onchange="myTrim(this)"
+                               required="required"/>
                         <label th:if="${#fields.hasErrors('FirstName')}" th:errors="*{firstName}"
                                class="validation-message"></label>
                     </div>
@@ -54,7 +63,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="text" th:field="*{lastName}"
-                               placeholder="Last Name" class="form-control" required="required"/>
+                               placeholder="Last Name" class="form-control"
+                               onchange="myTrim(this)"
+                               required="required"/>
                         <label th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
                                class="validation-message"></label>
                     </div>
@@ -63,7 +74,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="email" th:field="*{email}" placeholder="Email"
-                               class="form-control" required="required"/>
+                               class="form-control"
+                               onchange="myTrim(this)"
+                               required="required"/>
                         <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
                                class="validation-message"></label>
                     </div>
@@ -72,7 +85,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{password}"
-                               placeholder="Password" class="form-control" minlength="8" required="required"/>
+                               placeholder="Password" class="form-control" minlength="8"
+                               onchange="myTrim(this)"
+                               required="required"/>
                         <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
                                class="validation-message"></label>
                     </div>
@@ -81,7 +96,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{confirmPassword}"
-                               placeholder="Сonfirm Password" class="form-control" minlength="8" required="required"/>
+                               placeholder="Сonfirm Password" class="form-control" minlength="8"
+                               onchange="myTrim(this)"
+                               required="required"/>
                         <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"
                                class="validation-message"></label>
                     </div>
@@ -99,5 +116,8 @@
         </div>
     </div>
 </div>
+<script>
+    console.log('ss  d  '.trim())
+</script>
 </body>
 </html>
