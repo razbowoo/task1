@@ -40,6 +40,17 @@
                         <td th:text="${user.email}"></td>
                         <!--<td th:text="${user.password}"></td>-->
                     </tr>
+
+                    <form th:action="@{/update}">
+                        <input type="text" name="firstName" th:value="${user.firstName}"/>
+                        <input type="text" name="lastName" th:value="${user.lastName}"/>
+                        <input type="text" name="email" th:value="${user.email}"/>
+                        <input type="hidden" name="id" th:value="${user.id}"/>
+                        <input type="submit" value="submit"/>
+
+
+                    </form>
+
                 </table>
             </div>
         </div>

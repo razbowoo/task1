@@ -6,6 +6,7 @@ import org.springframework.security.authentication.encoding.ShaPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.regex.Matcher;
@@ -33,6 +34,12 @@ public class MainController {
         return "login";
     }
 
+
+    @RequestMapping(value = "/")
+    public String defaultpage() {
+        return "redirect:/login";
+    }
+
     @RequestMapping(value = "/forgot-password")
     public String forgotPassword() {
         return "forgot-password";
@@ -47,33 +54,22 @@ public class MainController {
         return "home";
     }
 
-//    @RequestMapping(value = "/registration")
-//    public static class passwordvalidation {
-//        public static void main(String[] args) {
-//            String password = "aaZZa44@";
-//            String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
-//            System.out.println(password.matches(pattern));
-//        }
-//    }
-//
-//    @RequestMapping(value = "/registration")
-//    public static class emailvalidation {
-//        public static void main(String[] args) {
-//            int counter = 0;
-//            String email = "example@gmail.com";
-//            Pattern pattern = Pattern.compile("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$");
-//            Matcher matcher = pattern.matcher(email);
-//
-//            while (matcher.find()) {
-//                counter++;
-//                System.out.println("Matches found: " +
-//                        email.substring(matcher.start(), matcher.end()) +
-//                        "'. Starting at index" + matcher.start() +
-//                        "'. and ending at index" + matcher.end());
-//            }
-//            System.out.println("Matches found: " + counter);
-//        }
-//    }
+
+    @RequestMapping(value = "/update")
+    public String update(@RequestParam String firstName,
+                         @RequestParam String lastName,
+                         @RequestParam String email,
+                         @RequestParam int id) {
+        User user = userService.findById(id).get();
+        if (firstName != null) user.setFirstName(firstName);
+        if (lastName != null) user.setLastName(lastName);
+        if (email != null) user.setEmail(email);
+        userService.update(user);
+        return "redirect:/home";
+    }
+
 }
+
+
 
 

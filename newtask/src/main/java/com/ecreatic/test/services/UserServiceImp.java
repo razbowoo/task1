@@ -31,6 +31,11 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+    public Optional<User> findById(int id) {
+        return userDAO.findById(id);
+    }
+
+    @Override
     public User save(User user) {
         user.setPassword(shaPasswordEncoder.encodePassword(user.getPassword(), null));
         user.setActive(1);
@@ -39,8 +44,8 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public User update(User user) {
-        return null;
+    public void update(User user) {
+        userDAO.update(user);
     }
 
     @Override

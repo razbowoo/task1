@@ -11,8 +11,11 @@ public interface UserDAO {
 
     Optional<User> findByEmail(String Eamil);
 
-    User findById(int id);
+    Optional<User> findById(int id);
+
 
 
     List<User> findAll();
+
+    void update(User user);
 }

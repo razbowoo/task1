@@ -85,9 +85,9 @@ public class UserDaoImpl implements UserDAO {
 
 
     @Override
-    public User findById(int id) {
+    public Optional<User> findById(int id) {
 
-        String sql = "SELECT * FROM USERS WHERE identity = ?";
+        String sql = "SELECT * FROM USERS WHERE id = ?";
 
         try (Connection conn = dataSource.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -107,8 +107,25 @@ public class UserDaoImpl implements UserDAO {
             }
             rs.close();
             ps.close();
-            return user;
+            return Optional.of(user);
         } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void update(User user) {
+        String sql = "UPDATE USERS SET firstName =?,LastName=?,email=? WHERE ID=?";
+
+        try (Connection conn = dataSource.getConnection()) {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, user.getFirstName());
+            ps.setString(2, user.getLastName());
+            ps.setString(3, user.getEmail());
+            ps.setInt(4,user.getId());
+            ps.execute();
+        }
+        catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
@@ -120,7 +137,7 @@ public class UserDaoImpl implements UserDAO {
         try (Connection conn = dataSource.getConnection()) {
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
-            while(rs.next()) {
+            while (rs.next()) {
                 User user = new User(
                         rs.getInt("ID"),
                         rs.getString("FIRSTNAME"),

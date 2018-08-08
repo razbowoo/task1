@@ -7,16 +7,17 @@ import java.util.Optional;
 
 
 public interface UserService {
-        List<User> findAll();
+    List<User> findAll();
 
-        Optional<User> findBy(String email);
+    Optional<User> findBy(String email);
 
+    Optional<User> findById(int id);
 
-         User save(User user);
+    User save(User user);
 
-        User update(User user);
+    void update(User user);
 
-        void delete(User user);
+    void delete(User user);
 
 
 }
