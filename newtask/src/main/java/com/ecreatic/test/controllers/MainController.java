@@ -29,16 +29,17 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping(value = "/login")
-    public String login() {
-        return "login";
-    }
-
 
     @RequestMapping(value = "/")
     public String defaultpage() {
         return "redirect:/login";
     }
+
+    @RequestMapping(value = "/login")
+    public String login() {
+        return "login";
+    }
+
 
     @RequestMapping(value = "/forgot-password")
     public String forgotPassword() {
