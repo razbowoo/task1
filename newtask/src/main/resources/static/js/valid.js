@@ -7,6 +7,11 @@ var btn = document.getElementById('btn');
 var email = document.getElementById('email');
 var isErrors = false;
 
+function myTrim (input) {
+    input.value = input.value.trim();
+
+}
+
 
 var generateError = function (text) {
     isErrors = false;
