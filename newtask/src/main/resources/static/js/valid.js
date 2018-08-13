@@ -47,7 +47,7 @@ var checkFieldsPresence = function () {
 
 function validateEmail(email) {
     var bool = false
-    var re = /\S+@\S+\.\S+/;
+    var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+[^<>()\.,;:\s@\"]{2,})$/;
     if (email.value !== re.value) {
         console.log('not equals');
         console.log(email);
@@ -76,7 +76,7 @@ function beforeSubmit() {
     removeValidation();
 
 
-    if (!checkFieldsPresence() && !checkPasswordMatch() && !validateEmail(email) ) {
+    if (!checkFieldsPresence() && validateEmail(email) && !checkPasswordMatch()  ) {
         console.log(1);
         document.getElementById('registration').submit()
     }
