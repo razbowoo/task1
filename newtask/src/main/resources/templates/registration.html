@@ -94,7 +94,7 @@
                     <div class="col-sm-9">
                         <input type="password" th:field="*{confirmPassword}"
                                placeholder="Сonfirm Password" class="form-control confirmPassword" minlength="8"
-                               onchange="myTrim(this)"
+                               onchange="myTrim(this)" required="required"
                                />
                         <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"
                                class="validation-message"></label>

@@ -63,7 +63,7 @@ var checkPasswordMatch = function () {
     if (password.value !== confirmPassword.value) {
         console.log('not equals');
         console.log(confirmPassword);
-        var error = generateError('Password doesnt match');
+        var error = generateError('Password doesnt match, minimum length is 8 ');
         password.parentElement.insertBefore(error, password);
         bool = true;
     }
