@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 
 @Controller
@@ -41,10 +40,10 @@ public class MainController {
     }
 
 
-    @RequestMapping(value = "/forgot-password")
-    public String forgotPassword() {
-        return "forgot-password";
-    }
+//    @RequestMapping(value = "/forgot-password")
+//    public String forgotPassword() {
+//        return "forgot-password";
+//    }
 
     @RequestMapping(value = "/home")
     public String home(Model model, HttpServletRequest request) {

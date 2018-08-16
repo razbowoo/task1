@@ -1,7 +1,6 @@
 const fields = document.querySelectorAll('.form-control');
-const form = document.getElementById('registration');
+const form = document.getElementById('signIn');
 const password = form.querySelector('.password').value;
-const confirmPassword = form.querySelector('.confirmPassword').value;
 const email = document.getElementById('email').value;
 let isErrors = false;
 
@@ -47,25 +46,10 @@ function validate(email) {
     return true;
 }
 
-function checkPasswordMatch() {
-    if (password !== confirmPassword) {
-        alert("Passwords Do not match");
-        return false;
-    }
-    return true;
-}
 
 function beforeSubmit() {
     removeValidation();
-    if (!checkFieldsPresence() && validate(email) && checkPasswordMatch()) {
-        document.getElementById('registration').submit()
+    if (!checkFieldsPresence() && validate(email)) {
+        document.getElementById('login').submit()
     }
 }
-
-
-
-
-
-
-
-
