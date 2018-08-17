@@ -50,6 +50,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .accessDeniedPage("/access-denied");
     }
 
+    @Override
+    public void configure(WebSecurity web) {
+        web
+                .ignoring()
+                .antMatchers("/resources/**").anyRequest();
+    }
+
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService).passwordEncoder(shaPasswordEncoder);
@@ -67,12 +74,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return server;
     }
 
-    @Override
-    public void configure(WebSecurity web) {
-        web
-                .ignoring()
-                .antMatchers("/resources/", "/static/", "/css/", "/js/", "/images/**");
-    }
-}
+
+         }
 
 
