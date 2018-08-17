@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Login</title>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Bootstrap CSS -->
@@ -22,7 +23,7 @@
 <body>
 <div class="container-fluid">
     <div th:if="${param.error}">
-        <div class="alert alert-warning alert-dismissible fade show loginError">
+        <div style="display: none" class="alert alert-warning alert-dismissible fade show loginError">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -40,6 +41,7 @@
 
     <div class="row work-space justify-content-center">
         <div class="col-md-4">
+            <h2>Login </h2>
             <form th:action="@{/login}" method="post" id="signIn">
                 <div class="form-group">
                     <input class="form-control" id="email" type="text" name="email" placeholder="Enter email"
@@ -65,7 +67,6 @@
         </div>
     </div>
 </div>
-<script th:src="@{/js/loginvalid.js}">
-</script>
+
 </body>
 </html>
