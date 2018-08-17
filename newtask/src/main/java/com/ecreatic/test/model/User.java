@@ -9,6 +9,7 @@ public class User {
     private String confirmPassword;
     private int active = 0;
     private String role;
+    private String confirmEmail;
 
     public User (){}
 
@@ -90,4 +91,14 @@ public class User {
     public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
     }
+
+    public String getConfirmEmail(){
+        return confirmEmail;
+    }
+
+    public void setConfirmEmail(){
+        this.confirmEmail = confirmEmail;
+    }
+
 }
+

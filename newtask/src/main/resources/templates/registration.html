@@ -93,9 +93,9 @@
                 <div class="form-group">
                     <div class="col-sm-9">
                         <input type="password" th:field="*{confirmPassword}"
-                               placeholder="Сonfirm Password" class="form-control confirmPassword" minlength="8"
-                               onchange="myTrim(this)" required="required"
-                               />
+                               placeholder="Confirm Password" class="form-control confirmPassword" minlength="8"
+                               onchange="myTrim(this)"
+                        />
                         <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"
                                class="validation-message"></label>
                     </div>
@@ -104,7 +104,9 @@
 
                 <div class="form-group">
                     <div class="col-sm-9">
-                        <button type="button" onclick="beforeSubmit()" class="btn btn-primary btn-block" id="btn">Register user</button>
+                        <button type="button" onclick="beforeSubmit()" class="btn btn-primary btn-block" id="btn">
+                            Register user
+                        </button>
                         <a style="margin-top: 20px;" class="btn btn-primary btn-block" th:href="@{/login}">Go to
                             login</a>
                     </div>
@@ -113,7 +115,7 @@
         </div>
     </div>
 </div>
-<script th:src="@{/js/valid.js}">
+<script th:src="@{/js/validat.js}">
 </script>
 </body>
 </html>

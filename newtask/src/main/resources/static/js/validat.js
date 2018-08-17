@@ -1,7 +1,6 @@
 const fields = document.querySelectorAll('.form-control');
-const form = document.getElementById('signIn');
-const password = form.querySelector('.password').value;
-const email = document.getElementById('email').value;
+const form = document.getElementById('registration');
+
 let isErrors = false;
 
 function myTrim(input) {
@@ -37,19 +36,40 @@ function checkFieldsPresence() {
     return bool;
 }
 
-function validate(email) {
-    let reg = /\w+@\w+\.\w/i;
+function validateEmail() {
+    const email = document.getElementById('email').value;
+    let reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!reg.test(email)) {
-        alert('Invalid Email Address');
+        console.log (email);
+        alert('Please Write Valid Email Address');
         return false;
     }
     return true;
 }
 
+function checkPasswordMatch() {
+    const password = form.querySelector('.password').value;
+    const confirmPassword = form.querySelector('.confirmPassword').value;
+    if (password !== confirmPassword) {
+        console.log(password);
+        console.log(confirmPassword);
+        alert("Passwords Do not match");
+        return false;
+    }
+    return true;
+}
 
 function beforeSubmit() {
     removeValidation();
-    if (!checkFieldsPresence() && validate(email)) {
-        document.getElementById('login').submit()
+    if (!checkFieldsPresence() && validateEmail()  && checkPasswordMatch()) {
+        document.getElementById('registration').submit()
     }
 }
+
+
+
+
+
+
+
+
