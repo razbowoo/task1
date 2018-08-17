@@ -56,8 +56,13 @@ function checkPasswordMatch() {
         alert("Passwords Do not match");
         return false;
     }
+    if (password.length < 8) {
+        alert("Minimum weight 8");
+        return false;
+    }
     return true;
 }
+
 
 function beforeSubmit() {
     removeValidation();
