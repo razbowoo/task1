@@ -33,11 +33,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/login").permitAll()
-                .antMatchers("/admin/**").hasAuthority("ADMIN")
+                .antMatchers("/registration/").permitAll()
+                .antMatchers("/admin/").hasAuthority("ADMIN")
                 .antMatchers("/forgot-password").hasAuthority("USER")
-                .antMatchers("/home").hasAuthority("USER")
                 .antMatchers("/index").hasAuthority("USER")
-                .antMatchers("/registration/**").permitAll().anyRequest()
+                .antMatchers("/home").hasAuthority("USER")
+                .anyRequest()
                 .authenticated().and().csrf().disable().formLogin()
                 .loginPage("/login").failureUrl("/login?error=true")
                 .defaultSuccessUrl("/index")
@@ -54,7 +55,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) {
         web
                 .ignoring()
-                .antMatchers("/resources/**").anyRequest();
+                .antMatchers("/resources/**");
     }
 
     @Autowired
