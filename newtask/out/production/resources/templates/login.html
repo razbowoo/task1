@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+
+    <script>function myTrim(input) {
+        input.value = input.value.trim();
+    }</script>
+</head>
+<body>
+<div class="container-fluid">
+        <div th:if="${param.error}">
+        <div style="display: none" class="alert alert-warning alert-dismissible fade show loginError">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Error!</strong> Invalid username or password.
+        </div>
+    </div>
+    <div th:if="${param.logout}">
+        <div class="alert alert-warning alert-dismissible fade show loginError">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            You have been logged out.
+        </div>
+    </div>
+
+    <div class="row work-space justify-content-center">
+        <div class="col-md-4">
+            <h2>Login </h2>
+            <form th:action="@{/login}" method="post" id="signIn">
+                <div class="form-group">
+                    <input class="form-control" id="email" type="text" name="email" placeholder="Enter email"
+                           onchange="myTrim(this)"
+                           />
+                </div>
+                <div class="form-group">
+                    <input class="form-control password" type="password" name="password" placeholder="Enter password"
+                           onchange="myTrim(this)"
+                           />
+                </div>
+                <input id="login" class="btn btn-outline-primary btn-block" type="submit" value="Login"/>
+            </form>
+            <form th:action="@{/registration}" method="get">
+                <span>Still have no account?</span><input id="register" class="btn btn-link" type="submit"
+                                                          value="Register!"/>
+            </form>
+
+            <form th:action="@{/forgot-password}" method="get">
+                <span>Forgot your password?</span><input id="forgot-password" class="btn btn-link" type="submit"
+                                                         value="Forgot password!"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

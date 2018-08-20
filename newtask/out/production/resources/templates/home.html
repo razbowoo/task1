@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html"
+>
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div align="center">
+    <p><b> </b></p>
+    <div class="form-group">
+        <div align="center">
+            <div>
+                <h1>Your Profile</h1>
+                <table>
+                    <th> id</th>
+                    <th> Name</th>
+                    <th> LastName</th>
+                    <th> Email</th>
+                    <!--<th>Password</th>-->
+
+                    <tr>
+                        <td th:text="${user.id}"></td>
+                        <td th:text="${user.firstName}"></td>
+                        <td th:text="${user.lastName}"></td>
+                        <td th:text="${user.email}"></td>
+                        <!--<td th:text="${user.password}"></td>-->
+                    </tr>
+                    <i>Edit your profile</i> <p></p>
+                    <form th:action="@{/update}">
+                        <input type="text" name="firstName" th:value="${user.firstName}"
+                               onchange="myTrim(this)"
+                               required="required"/>
+                        <input type="text" name="lastName" th:value="${user.lastName}"
+                               onchange="myTrim(this)"
+                               required="required"/>
+                        <input type="email" name="email" th:value="${user.email}"
+                               onchange="myTrim(this)"
+                               required="required"/>
+                        <input type="hidden" name="id" th:value="${user.id}"/>
+                        <input type="submit" value="submit"/>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+
+                    </form>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="@{/js/validat.js}"></script>
+</body>
+</html>
