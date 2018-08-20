@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf84c585-0c97-45d2-9ec5-2fcb6b952be7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -207,7 +206,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+              <caret column="86" selection-start-column="86" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -823,7 +822,24 @@
             <path>
               <item name="task1" type="b2602c69:ProjectViewProjectNode" />
               <item name="task1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="newtask" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="task1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="newtask" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -843,7 +859,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534764302826" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534766045008" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -998,7 +1014,7 @@
       <workItem from="1534418979070" duration="3457000" />
       <workItem from="1534491368018" duration="18387000" />
       <workItem from="1534753096080" duration="1662000" />
-      <workItem from="1534755464956" duration="5569000" />
+      <workItem from="1534755464956" duration="7181000" />
     </task>
     <task id="LOCAL-00001" summary="add validation email and password with js">
       <created>1534409270855</created>
@@ -1084,7 +1100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534764299545</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix some bugs">
+      <created>1534764436886</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534764436886</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1093,13 +1116,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45772000" />
+    <option name="totallyTimeSpent" value="47384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1109,14 +1131,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22741936" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22741936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27903226" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32903227" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -1394,7 +1416,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+          <caret column="86" selection-start-column="86" selection-end-column="86" />
         </state>
       </provider>
     </entry>
