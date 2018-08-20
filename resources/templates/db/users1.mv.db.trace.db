@@ -1,0 +1,4 @@
+2018-08-15 10:14:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "USERS" не найдена
+Table "USERS" not found; SQL statement:
+DROP TABLE USERS [42102-197]
