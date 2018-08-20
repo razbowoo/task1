@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf84c585-0c97-45d2-9ec5-2fcb6b952be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -137,7 +137,7 @@
           <entry key="java" value="271" />
           <entry key="js" value="1135" />
           <entry key="properties" value="2" />
-          <entry key="txt" value="120" />
+          <entry key="txt" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -147,7 +147,7 @@
           <entry key="HTML" value="307" />
           <entry key="JAVA" value="271" />
           <entry key="JavaScript" value="1135" />
-          <entry key="PLAIN_TEXT" value="129" />
+          <entry key="PLAIN_TEXT" value="141" />
           <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
@@ -207,7 +207,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -843,7 +843,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534764269260" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534764302826" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -998,7 +998,7 @@
       <workItem from="1534418979070" duration="3457000" />
       <workItem from="1534491368018" duration="18387000" />
       <workItem from="1534753096080" duration="1662000" />
-      <workItem from="1534755464956" duration="5251000" />
+      <workItem from="1534755464956" duration="5569000" />
     </task>
     <task id="LOCAL-00001" summary="add validation email and password with js">
       <created>1534409270855</created>
@@ -1070,7 +1070,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534763058411</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix some bugs">
+      <created>1534764124410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534764124410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix some bugs">
+      <created>1534764299545</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534764299545</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1079,7 +1093,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45454000" />
+    <option name="totallyTimeSpent" value="45772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1380,7 +1394,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
