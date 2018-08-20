@@ -67,8 +67,8 @@ public class MainController {
         userService.update(user);
         return "redirect:/home";
     }
-
 }
+
 
 
 
