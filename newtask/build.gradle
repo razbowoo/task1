@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '1.5.10.RELEASE'
     id 'java'
     id 'idea'
-    id 'war'
+    id 'app'
 }
 
 group 'com.ecreativ.test'
@@ -27,16 +27,15 @@ dependencies {
 }
 
 
-task stage() {
-    dependsOn clean, war
-}
-war.mustRunAfter clean
-
-task copyToLib(type: Copy) {
-    into "$buildDir/server"
-    from(configurations.compile) {
-        include "webapp-runner*"
+task stage(type: Copy, dependsOn: [clean, build]) {
+    from jar.archivePath
+    into project.rootDir
+    rename {
+        'app.jar'
     }
 }
+stage.mustRunAfter(clean)
 
-stage.dependsOn(copyToLib)
+clean << {
+    project.file('app.jar').delete()
+}
