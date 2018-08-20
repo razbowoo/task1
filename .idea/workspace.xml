@@ -922,7 +922,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico&#10;favicon&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration&#10;favicon.ico&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534770345656" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534770421198" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
