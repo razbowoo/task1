@@ -33,13 +33,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/login").permitAll()
-                .antMatchers("/registration/").permitAll()
                 .antMatchers("/admin/").hasAuthority("ADMIN")
                 .antMatchers("/forgot-password").hasAuthority("USER")
                 .antMatchers("/index").hasAuthority("USER")
                 .antMatchers("/home").hasAuthority("USER")
+                .antMatchers("/registration/**").permitAll()
                 .anyRequest()
-                .authenticated().and().csrf().disable().formLogin()
+                .authenticated()
+                .and()
+                .csrf()
+                .disable()
+                .formLogin()
                 .loginPage("/login").failureUrl("/login?error=true")
                 .defaultSuccessUrl("/index")
                 .usernameParameter("email")
@@ -55,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) {
         web
                 .ignoring()
-                .antMatchers("/resources/**");
+                .antMatchers("/resources/**", "/favicon.ico");
     }
 
     @Autowired

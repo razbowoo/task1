@@ -40,6 +40,9 @@
                         <td th:text="${user.email}"></td>
                         <!--<td th:text="${user.password}"></td>-->
                     </tr>
+
+
+
                     <i>Edit your profile</i> <p></p>
                     <form th:action="@{/update}">
                         <input type="text" name="firstName" th:value="${user.firstName}"
@@ -69,6 +72,14 @@
             </div>
         </div>
     </div>
+</div>
+<div align="center">
+<div class="form-group">
+    <div class="col-sm-9">
+
+        <a style="margin-top: 20px;" class="btn btn-primary btn-block" th:href="@{/logout}">Log out</a>
+    </div>
+</div>
 </div>
 <script th:src="@{/js/validat.js}"></script>
 </body>
