@@ -33,6 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/login").permitAll()
+
                 .antMatchers("/admin/").hasAuthority("ADMIN")
                 .antMatchers("/forgot-password").hasAuthority("USER")
                 .antMatchers("/index").hasAuthority("USER")
@@ -59,7 +60,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) {
         web
                 .ignoring()
-                .antMatchers("/resources/**", "/favicon.ico");
+                .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**", "/favicon.ico");
     }
 
     @Autowired
