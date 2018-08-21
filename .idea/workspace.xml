@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf84c585-0c97-45d2-9ec5-2fcb6b952be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/newtask/src/main/resources/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/out/production/classes/com/ecreatic/test/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/classes/com/ecreatic/test/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/db/users1.mv.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/db/users1.mv.db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/templates/registration.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -154,7 +146,7 @@
           <entry key="java" value="470" />
           <entry key="js" value="1135" />
           <entry key="properties" value="4" />
-          <entry key="txt" value="134" />
+          <entry key="txt" value="171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -164,7 +156,7 @@
           <entry key="HTML" value="391" />
           <entry key="JAVA" value="470" />
           <entry key="JavaScript" value="1135" />
-          <entry key="PLAIN_TEXT" value="143" />
+          <entry key="PLAIN_TEXT" value="180" />
           <entry key="Properties" value="4" />
         </counts>
       </usages-collector>
@@ -187,7 +179,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="203">
               <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -954,7 +946,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico&#10;favicon&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration&#10;favicon.ico&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534836563093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534836721656" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -1121,7 +1113,7 @@
       <workItem from="1534755464956" duration="16114000" />
       <workItem from="1534833592361" duration="141000" />
       <workItem from="1534833798863" duration="144000" />
-      <workItem from="1534834391456" duration="2075000" />
+      <workItem from="1534834391456" duration="2393000" />
     </task>
     <task id="LOCAL-00001" summary="add validation email and password with js">
       <created>1534409270855</created>
@@ -1277,7 +1269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534774211147</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add logout, add secure cofig">
+      <created>1534836706263</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1534836706263</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1286,11 +1285,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58677000" />
+    <option name="totallyTimeSpent" value="58995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1351,7 +1349,8 @@
     <MESSAGE value="debug validation" />
     <MESSAGE value="fix some bugs" />
     <MESSAGE value="fix some bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some bug" />
+    <MESSAGE value="add logout, add secure cofig" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logout, add secure cofig" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1577,7 +1576,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile.txt">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="89" selection-start-column="89" selection-end-column="89" />
@@ -1623,7 +1622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="203">
           <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
