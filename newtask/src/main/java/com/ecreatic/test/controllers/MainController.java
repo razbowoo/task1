@@ -40,10 +40,10 @@ public class MainController {
     }
 
 
-//    @RequestMapping(value = "/forgot-password")
-//    public String forgotPassword() {
-//        return "forgot-password";
-//    }
+    @RequestMapping(value = "/forgot-password")
+    public String forgotPassword() {
+        return "forgot-password";
+    }
 
     @RequestMapping(value = "/home")
     public String home(Model model, HttpServletRequest request) {

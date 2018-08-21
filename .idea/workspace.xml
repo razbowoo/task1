@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bf84c585-0c97-45d2-9ec5-2fcb6b952be7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/out/production/classes/com/ecreatic/test/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/classes/com/ecreatic/test/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/out/production/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/out/production/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/templates/db/users1.mv.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/db/users1.mv.db.mv.db" afterDir="false" />
     </list>
@@ -113,9 +118,9 @@
           <entry key="gitignore" value="2" />
           <entry key="gradle" value="8" />
           <entry key="gradlew" value="2" />
-          <entry key="html" value="19" />
+          <entry key="html" value="22" />
           <entry key="ico" value="6" />
-          <entry key="java" value="46" />
+          <entry key="java" value="47" />
           <entry key="js" value="6" />
           <entry key="properties" value="4" />
           <entry key="sql" value="6" />
@@ -127,9 +132,9 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="Groovy" value="8" />
-          <entry key="HTML" value="19" />
+          <entry key="HTML" value="22" />
           <entry key="Image" value="6" />
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="47" />
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="4" />
@@ -143,21 +148,21 @@
           <entry key="css" value="1" />
           <entry key="gitignore" value="9" />
           <entry key="gradle" value="25" />
-          <entry key="html" value="447" />
+          <entry key="html" value="514" />
           <entry key="java" value="479" />
           <entry key="js" value="1135" />
           <entry key="properties" value="14" />
-          <entry key="txt" value="236" />
+          <entry key="txt" value="257" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Groovy" value="25" />
-          <entry key="HTML" value="447" />
+          <entry key="HTML" value="514" />
           <entry key="JAVA" value="479" />
           <entry key="JavaScript" value="1135" />
-          <entry key="PLAIN_TEXT" value="245" />
+          <entry key="PLAIN_TEXT" value="266" />
           <entry key="Properties" value="14" />
         </counts>
       </usages-collector>
@@ -178,12 +183,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="75" selection-start-line="75" selection-end-line="75" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+            <state relative-caret-position="215">
+              <caret line="115" column="6" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -730,7 +786,6 @@
         <option value="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/DAO/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/static/css/style.css" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/static/js/loginvalid.js" />
-        <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html" />
         <option value="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/model/User.java" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/static/js/valid.js" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/static/js/validate.js" />
@@ -738,14 +793,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/newtask/stage.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/Procfile.txt" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/newtask/build.gradle" />
-        <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html" />
+        <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html" />
+        <option value="$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java" />
       </list>
     </option>
   </component>
@@ -927,7 +983,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico&#10;favicon&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration&#10;favicon.ico&#9;FILE&#9;jar://C:/Users/kirill/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.10.RELEASE/55c4f5b6081a9e271fbc0c051cfb529c93844291/spring-boot-1.5.10.RELEASE-sources.jar!/favicon.ico" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534840877791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534844178203" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -1094,7 +1150,7 @@
       <workItem from="1534755464956" duration="16114000" />
       <workItem from="1534833592361" duration="141000" />
       <workItem from="1534833798863" duration="144000" />
-      <workItem from="1534834391456" duration="6166000" />
+      <workItem from="1534834391456" duration="7541000" />
     </task>
     <task id="LOCAL-00001" summary="add validation email and password with js">
       <created>1534409270855</created>
@@ -1285,7 +1341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534839747301</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix and work with js">
+      <created>1534840977458</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1534840977458</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1294,7 +1357,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62768000" />
+    <option name="totallyTimeSpent" value="64143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1361,7 +1424,8 @@
     <MESSAGE value="fix some bug" />
     <MESSAGE value="add logout, add secure cofig" />
     <MESSAGE value="fix app.properties &#10;fix build gradle &#10;to try work with heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix app.properties &#10;fix build gradle &#10;to try work with heroku" />
+    <MESSAGE value="fix and work with js" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix and work with js" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1460,13 +1524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1527,16 +1584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1555,28 +1602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1631,12 +1656,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="75" selection-start-line="75" selection-end-line="75" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="116" column="9" lean-forward="true" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+        <state relative-caret-position="215">
+          <caret line="115" column="6" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
           <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newtask/src/main/java/com/ecreatic/test/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newtask/src/main/resources/templates/forgot-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

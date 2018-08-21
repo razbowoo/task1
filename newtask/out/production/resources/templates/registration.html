@@ -36,7 +36,7 @@
     <strong>Success!</strong> <span th:utext="${successMessage}"></span>
 </div>
 
-
+<div align="center">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-6">
@@ -102,7 +102,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-9">
-                        <button type="button" onclick="beforeSubmit()" class="btn btn-primary btn-block" id="btn">
+                        <button type="button" onclick="beforeSubmit()" class="btn btn-primary btn-block" >
                             Register user
                         </button>
                         <a style="margin-top: 20px;" class="btn btn-primary btn-block" th:href="@{/login}">Go to
@@ -112,6 +112,7 @@
             </form>
         </div>
     </div>
+</div>
 </div>
 <script th:src="@{/js/validat.js}">
 </script>
